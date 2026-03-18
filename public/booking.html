@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Appointment</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</head>
+
+<body>
+
+<h2 class="title">Book Appointment</h2>
+
+<div class="booking-box">
+
+<select id="service">
+<option disabled selected>Select Service</option>
+<option value="Car Wash">Car Wash</option>
+<option value="Vacuum Cleaning">Vacuum Cleaning</option>
+<option value="Waxing">Waxing</option>
+<option value="Tyre Polishing">Tyre Polishing</option>
+<option value="Home Cleaning">Home Cleaning</option>
+</select>
+
+<input type="text" id="datePicker" placeholder="Select Date" readonly>
+
+<select id="timeSlots">
+<option disabled selected>Select Time Slot</option>
+</select>
+
+<!-- NEW FIELDS -->
+<input type="text" id="mobile" placeholder="Enter Mobile Number">
+<input type="text" id="location" placeholder="Enter Location">
+
+<button type="button" onclick="getLocation()">Use My Location</button>
+
+<button onclick="book()">Book Appointment</button>
+
+</div>
+
+<script src="js/booking.js"></script>
+
+</body>
+</html>
